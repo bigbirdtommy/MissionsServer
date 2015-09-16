@@ -31,7 +31,7 @@ class Greeting(ndb.Model):
 
 class MainPage(webapp2.RequestHandler):
   def get(self):
-    self.response.out.write('<html><body>')
+    self.response.out.write('<html><body> Hello User! <hr/>')
 
     greetings = ndb.gql('SELECT * '
                         'FROM Greeting '
